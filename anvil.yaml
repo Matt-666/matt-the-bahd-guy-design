@@ -1,17 +1,18 @@
-allow_embedding: false
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
+startup: {type: form, module: Base}
 package_name: Matt_the_Bahd_guy_design
+allow_embedding: false
+name: Matt the Bahd guy design
+runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
+  server_spec: null}
+metadata: {title: Let's Shop, description: Shoping}
+startup_form: null
 db_schema:
   table_1:
     client: none
     server: full
     columns: []
     title: Table 1
-name: Matt the Bahd guy design
-startup_form: Form1
-runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
-  server_spec: null}
-metadata: {title: Let's Shop, description: Shoping}
-services:
-- source: /runtime/services/tables.yml
-  client_config: {}
-  server_config: {}
