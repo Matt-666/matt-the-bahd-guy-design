@@ -20,6 +20,7 @@ components:
       italic: false, background: '', bold: false, underline: false, icon: 'fa:shopping-cart'}
     name: My_designs
     layout_properties: {}
+    event_bindings: {click: My_designs_click}
   - type: Link
     properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: SIGN IN, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,

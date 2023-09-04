@@ -9,7 +9,9 @@ components:
   components:
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'Product Page!
+      visible: true, text: 'Product Page!  Buy all your Children and Adults Wears
+        Ranging From 5million to 10million.
+
 
         ', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
       italic: false, background: '', bold: false, underline: false, icon: ''}

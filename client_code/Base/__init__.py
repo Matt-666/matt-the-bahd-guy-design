@@ -14,6 +14,14 @@ class Base(BaseTemplate):
     # Any code you write here will run before the form opens.
 
   def link_1_click(self, **event_args):
+   """This method is called when the link is clicked"""
+   self.content_panel.clear()
+   self.content_panel.add_component(Home())
+
+  def My_designs_click(self, **event_args):
     """This method is called when the link is clicked"""
-    pass
+    self.content_panel.clear()
+    self.content_panel.add_component(Clothes())
+    
+
 
