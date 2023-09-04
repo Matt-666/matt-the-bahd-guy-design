@@ -28,6 +28,7 @@ components:
       italic: false, background: '', bold: false, underline: false, icon: 'fa:street-view'}
     name: Sign_in
     layout_properties: {}
+    event_bindings: {click: Sign_in_click}
 - type: Link
   properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
     visible: true, text: Let's Shop Online, font_size: null, wrap_on: mobile, font: '',
