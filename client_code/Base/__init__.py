@@ -14,7 +14,7 @@ class Base(BaseTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     self.change_sign_in_text()
-    self.content_panel.add_component(Home())
+    self.go_to_home()
 
   def change_sign_in_text(self):
     user = anvil.users.get_user()
@@ -36,7 +36,7 @@ class Base(BaseTemplate):
 
   def go_to_home(self):
     self.content_panel.clear()
-    self.content_panel.add_component((Home))
+    self.content_panel.add_component((Home)
 
     
   def My_designs_click(self, **event_args):
@@ -46,7 +46,12 @@ class Base(BaseTemplate):
 
   def Sign_in_click(self, **event_args):
     """This method is called when the link is clicked"""
-   user = anvil.users.get_users()
+    user = anvil.users.get_user()
+    if user:
+     logout = confirm("Would you like to logout")
+     if logout:
+       anvil.users.logout()
+       self.go_to_home()
     
 
 
