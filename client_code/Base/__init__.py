@@ -22,24 +22,24 @@ class Base(BaseTemplate):
       email = user["email"]
       self.Sign_in.text = email
     else:
-     self.sign_in.text = "SIGN IN"
-  
-   
+     self.Sign_in.text = "SIGN IN"
 
+    self.toggle_my_shop_link()
+
+  def toggle_my_shop_link(self):
+    self.my_shop.visible = anvil.users.get_user() !=None
+  
+  def lets_shop_online_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    self.go_to_home()
   
 
-  def link_1_click(self, **event_args):
-   """This method is called when the link is clicked"""
+  def go_to_home(self):
    self.content_panel.clear()
    self.content_panel.add_component(Home())
 
-
-  def go_to_home(self):
-    self.content_panel.clear()
-    self.content_panel.add_component((Home)
-
     
-  def My_designs_click(self, **event_args):
+  def my_shop_click(self, **event_args):
     """This method is called when the link is clicked"""
     self.content_panel.clear()
     self.content_panel.add_component(SHop())
@@ -48,16 +48,19 @@ class Base(BaseTemplate):
     """This method is called when the link is clicked"""
     user = anvil.users.get_user()
     if user:
-     logout = confirm("Would you like to logout")
-     if logout:
-       anvil.users.logout()
-       self.go_to_home()
-    
-
-
-    
-    anvil.users.login_with_form()
+      logout = confirm("Would you like to logout?")
+      if logout:
+        anvil.users.logout()
+        self.go_to_home()
+    else:
+      anvil.users.login_with_form()
     self.change_sign_in_text()
+
+  
+
+  
+
+
     
 
     

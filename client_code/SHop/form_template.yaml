@@ -13,6 +13,6 @@ components:
 
         ', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
       italic: false, background: '', bold: false, underline: false, icon: ''}
-    name: label_1
+    name: list_of_clothes
     layout_properties: {grid_position: 'HLFXFV,KDEMXK'}
 is_package: true
