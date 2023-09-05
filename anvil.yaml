@@ -61,6 +61,12 @@ db_schema:
     - name: price
       type: number
       admin_ui: {width: 200, order: 1}
+    - name: created
+      type: datetime
+      admin_ui: {width: 200, order: 2}
+    - name: description
+      type: string
+      admin_ui: {width: 200, order: 3}
     title: men wears
   women_wears:
     client: none
