@@ -19,11 +19,6 @@ runtime_options: {version: 2, client_version: '3', server_version: python3-sandb
 metadata: {title: Let's Shop, description: Shoping}
 startup_form: null
 db_schema:
-  table_1:
-    client: none
-    server: full
-    columns: []
-    title: Table 1
   users:
     client: none
     server: full
@@ -52,4 +47,23 @@ db_schema:
     - name: signed_up
       type: datetime
       admin_ui: {order: 7, width: 200}
+    - name: Column9
+      type: simpleObject
+      admin_ui: {width: 200, order: 8}
     title: Users
+  men_wears:
+    client: none
+    server: full
+    columns:
+    - name: name
+      type: string
+      admin_ui: {width: 200, order: 0}
+    - name: price
+      type: number
+      admin_ui: {width: 200, order: 1}
+    title: men wears
+  women_wears:
+    client: none
+    server: full
+    columns: []
+    title: women wears
