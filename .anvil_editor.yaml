@@ -5,7 +5,8 @@ unique_ids:
     Home: '1693773549949838787876310.565'
     SHop: '1693861065621396159303213.5966'
   modules: {}
-  server_modules: {}
+  server_modules:
+    ShopDetails: '16939934995339614603126.011368'
   assets:
     standard-page.html: SK7Q3TVLHCUW63AETUN3S7RDHRI7LCRR
     theme.css: AEGGZONI3JZLPSENWR4WCRFG62UQ26SH

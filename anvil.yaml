@@ -67,6 +67,9 @@ db_schema:
     - name: description
       admin_ui: {order: 3, width: 414}
       type: string
+    - name: Image
+      type: media
+      admin_ui: {width: 200, order: 4}
     title: men wears
   women_wears:
     client: none
