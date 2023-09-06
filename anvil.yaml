@@ -56,17 +56,17 @@ db_schema:
     server: full
     columns:
     - name: name
+      admin_ui: {order: 0, width: 106}
       type: string
-      admin_ui: {width: 200, order: 0}
     - name: price
+      admin_ui: {order: 1, width: 102}
       type: number
-      admin_ui: {width: 200, order: 1}
     - name: created
       type: datetime
       admin_ui: {width: 200, order: 2}
     - name: description
+      admin_ui: {order: 3, width: 414}
       type: string
-      admin_ui: {width: 200, order: 3}
     title: men wears
   women_wears:
     client: none
