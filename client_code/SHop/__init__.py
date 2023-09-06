@@ -12,8 +12,4 @@ class SHop(SHopTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.load_shop()
 
-  def load_shop(self):
-    shop = anvil.server.call("get_shop_details", Matt is good )
-    print shop
