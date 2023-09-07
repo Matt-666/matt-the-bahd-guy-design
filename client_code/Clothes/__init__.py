@@ -14,8 +14,7 @@ class Clothes(ClothesTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     self.load_shop()
-    self.content_panel.add_componenet(ShopItem(name="Trousers",button_text="Buy for #19299.99",decription="cover your nakedness")
-                                      
+  
   def load_shop(self):
    shop = anvil.server.call("get_shop_details").search()
    
