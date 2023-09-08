@@ -9,11 +9,12 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 class ShopItem(ShopItemTemplate):
-  def __init__(self, name, description, button_text, **properties):
+  def __init__(self, name, description, button_text, image, button_callback, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.nameo.text = nameo
-    self.description.text = description
-    self.buy.text = button_text
+    self.nameo.content = name
+    self.description.content = description
+    self.button_text.text = button_text
+    self.imageo = image
 
     # Any code you write here will run before the form opens.
