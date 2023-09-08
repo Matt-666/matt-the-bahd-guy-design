@@ -17,7 +17,7 @@ class Clothes(ClothesTemplate):
     
   
   def load_shop(self):
-   shop = anvil.server.call("get_shop_details").search()
+   shop = anvil.server.call("get_all_menwears").search()
    shop_panel = GridPanel()
    
    for i,  menwears in enumerate(shop):

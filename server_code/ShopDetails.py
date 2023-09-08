@@ -6,9 +6,13 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.server
 
+@anvil.server.callable
+def get_shop_details(product_name):
+  return app_tables.men_wears.get(id_name = product_name)
+
 
 @anvil.server.callable
-def get_shop_details():
+def get_all_menwears():
   return app_tables.men_wears.client_readable()
    
 #
