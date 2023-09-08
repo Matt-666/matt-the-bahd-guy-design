@@ -20,5 +20,5 @@ class Clothes(ClothesTemplate):
    shop = anvil.server.call("get_shop_details").search()
    
    for menwears in shop:
-     c = ShopItem(name=menwears["name"], button_text=f"Purchase for ${menwears["Price"]}", description=menwears["description"], image=menwears["image"], button_callback=None)
+     c = ShopItem(name= menwears["name"], button_text=f"Purchase for ${menwears['price']}", description= menwears["description"], image= menwears["Image"], button_callback=None)
      self.Content_panel.add_component(c)

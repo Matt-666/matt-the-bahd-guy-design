@@ -14,7 +14,7 @@ class ShopItem(ShopItemTemplate):
     self.init_components(**properties)
     self.nameo.content = name
     self.description.content = description
-    self.button_text.text = button_text
-    self.imageo = image
+    self.buy.text = button_text
+    self.imageo.source = image
 
     # Any code you write here will run before the form opens.
