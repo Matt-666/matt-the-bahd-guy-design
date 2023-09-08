@@ -18,7 +18,10 @@ class Clothes(ClothesTemplate):
   
   def load_shop(self):
    shop = anvil.server.call("get_shop_details").search()
+   shop_panel = GridPanel()
    
-   for menwears in shop:
+   for i,  menwears in enumerate(shop):
      c = ShopItem(name= menwears["name"], button_text=f"Purchase for ${menwears['price']}", description= menwears["description"], image= menwears["Image"], button_callback=None)
-     self.Content_panel.add_component(c)
+     shop_panel.add_component(c, row = str(i//3), width_xs = 4)
+
+   self.Content_panel.add_component(shop_panel)
