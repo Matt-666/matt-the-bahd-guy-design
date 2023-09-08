@@ -16,7 +16,7 @@ class Checkout(CheckoutTemplate):
 
   def update_form(self, id_name):
     anvil.server.call('get_shop_details', id_name)
-    self.name_label.text = 
+    self.name_label.text = menwears["name"] 
    
 
 
