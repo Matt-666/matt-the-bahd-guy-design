@@ -18,3 +18,9 @@ class ShopItem(ShopItemTemplate):
     self.imageo.source = image
 
     # Any code you write here will run before the form opens.
+
+  def buy_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.button_callback()
+
+

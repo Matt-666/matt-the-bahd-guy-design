@@ -32,6 +32,7 @@ components:
     bold: true, underline: false, icon: ''}
   name: buy
   layout_properties: {grid_position: 'TGMCLM,IXSYQF'}
+  event_bindings: {click: buy_click}
 is_package: true
 custom_component: true
 properties:
