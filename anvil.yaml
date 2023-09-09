@@ -51,7 +51,12 @@ db_schema:
       type: simpleObject
       admin_ui: {width: 200, order: 8}
     title: Users
-  men_wears:
+  women_wears:
+    client: none
+    server: full
+    columns: []
+    title: women wears
+  menwears:
     client: none
     server: full
     columns:
@@ -70,9 +75,7 @@ db_schema:
     - name: Image
       type: media
       admin_ui: {width: 200, order: 4}
+    - name: id_name
+      type: string
+      admin_ui: {width: 200, order: 5}
     title: men wears
-  women_wears:
-    client: none
-    server: full
-    columns: []
-    title: women wears

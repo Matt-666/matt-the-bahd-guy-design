@@ -12,10 +12,11 @@ class Checkout(CheckoutTemplate):
   def __init__(self, id_name, back_button_callback, **properties):
     # Set Form properties and Data Bindings.
    self.init_components(**properties)
-   self.update.form(id_name)
+   self.update_form(id_name)
 
   def update_form(self, id_name):
-    anvil.server.call('get_shop_details', id_name)
+    menwears=anvil.server.call('get_shop_details', id_name)
+    self.menwears=menwears
     self.name_label.text = menwears["name"] 
     self.decription_label.text = menwears["decription"]
     self.price_label.text = f"${menwears['price']}USD"

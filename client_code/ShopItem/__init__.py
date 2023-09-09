@@ -16,11 +16,12 @@ class ShopItem(ShopItemTemplate):
     self.description.content = description
     self.buy.text = button_text
     self.imageo.source = image
+    self.button_callback = button_callback
 
     # Any code you write here will run before the form opens.
 
   def buy_click(self, **event_args):
     """This method is called when the button is clicked"""
-    self.button_callback(self.name_label.text.lower)
+    self.button_callback(self.nameo.content.lower())
 
 

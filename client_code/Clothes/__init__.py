@@ -22,7 +22,7 @@ class Clothes(ClothesTemplate):
 
   
   def render_checkout(self, product_name):
-    self.content_panel.clear()
+    self.Content_panel.clear()
     self.Content_panel.add_component(Checkout(product_name, self.back()))
    
   def load_shop(self):
@@ -30,7 +30,7 @@ class Clothes(ClothesTemplate):
    shop_panel = GridPanel()
    
    for i,  menwears in enumerate(shop):
-     c = ShopItem(name= menwears["name"], button_text=f"Purchase for ${menwears['price']}", description= menwears["description"], image= menwears["Image"], button_callback= self.render_checkout)
+     c = ShopItem(name = menwears["name"], button_text=f"Purchase for ${menwears['price']}", description = menwears["description"], image = menwears["Image"], button_callback = self.render_checkout)
      shop_panel.add_component(c, row = str(i//3), width_xs = 4)
 
    self.Content_panel.add_component(shop_panel)
