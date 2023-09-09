@@ -21,6 +21,6 @@ class ShopItem(ShopItemTemplate):
 
   def buy_click(self, **event_args):
     """This method is called when the button is clicked"""
-    self.button_callback()
+    self.button_callback(self.name_label.text.lower)
 
 
