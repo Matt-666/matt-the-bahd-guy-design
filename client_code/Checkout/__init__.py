@@ -16,16 +16,11 @@ class Checkout(CheckoutTemplate):
 
   def update_form(self, id_name):
     menwears=anvil.server.call('get_shop_details', id_name)
-    self.menwears=menwears
-    self.name_label.text = menwears["name"] 
-    self.decription_label.text = menwears["decription"]
+    self.menwears = menwears
+    self.name_label.text = menwears["Name"] 
+    self.decription_label.text = menwears['decription']
     self.price_label.text = f"${menwears['price']}USD"
-    self.image_content.source = menwears["image"]
-
-
-
-
-
+    self.image_content.source = menwears['Image']
 
 
     # Any code you write here will run before the form opens.
